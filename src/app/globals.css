@@ -47,6 +47,14 @@
   --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.129 0.042 264.695);
+  --white: #ffffff;
+  --black: #000000;
+  --transparent: transparent;
+  --blue-300: #93c5fd;
+  --blue-400: #60a5fa;
+  --blue-500: #3b82f6;
+  --indigo-300: #a5b4fc;
+  --violet-200: #ddd6fe;
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.129 0.042 264.695);
   --popover: oklch(1 0 0);
@@ -81,6 +89,14 @@
 .dark {
   --background: oklch(0.129 0.042 264.695);
   --foreground: oklch(0.984 0.003 247.858);
+  --white: #000000;
+  --black: #ffffff;
+  --transparent: transparent;
+  --blue-300: #1e40af;
+  --blue-400: #1d4ed8;
+  --blue-500: #3b82f6;
+  --indigo-300: #4338ca;
+  --violet-200: #5b21b6;
   --card: oklch(0.208 0.042 265.755);
   --card-foreground: oklch(0.984 0.003 247.858);
   --popover: oklch(0.208 0.042 265.755);
@@ -119,4 +135,11 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.lab-bg::before {
+  overflow: hidden;
+  max-width: 100vw;
+  max-height: 100vh;
+  box-sizing: border-box;
 }
